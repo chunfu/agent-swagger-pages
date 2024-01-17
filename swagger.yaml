@@ -18,7 +18,6 @@ paths:
         - message
       summary: Add messages to our data storage
       description: Add messages to our data storage
-      operationId: postMessages
       requestBody:
         description: Request payload
         content:
@@ -28,6 +27,10 @@ paths:
               items:
                 type: object
                 properties:
+                  aiMessageId:
+                    description: Optional, for tracking purpose
+                    type: string
+                    example: 1
                   from:
                     type: string
                     example: Guest
@@ -80,6 +83,9 @@ paths:
               schema:
                 type: object
                 properties:
+                  aiMessageId:
+                    type: string
+                    example: 1
                   from:
                     type: string
                     example: Guest
