@@ -31,12 +31,17 @@ paths:
                     description: Optional, for tracking purpose
                     type: string
                     example: 1
+                  chatroomId:
+                    type: number
+                    example: 56
                   from:
-                    type: string
-                    example: Guest
+                    description: It should be user id
+                    type: number
+                    example: 1
                   to:
-                    type: string
-                    example: Host
+                    description: It should be user id                    
+                    type: number
+                    example: 2
                   content:
                     type: string
                     example: This is chat content
@@ -70,7 +75,7 @@ paths:
       parameters:
         - name: messageId
           in: path
-          description: ID of previous message
+          description: ID of correlated message
           required: true
           schema:
             type: integer
