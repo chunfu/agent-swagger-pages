@@ -34,18 +34,14 @@ paths:
                   chatroomId:
                     type: number
                     example: 56
-                  from:
+                  fromUserId:
                     description: It should be user id
                     type: number
                     example: 1
-                  to:
-                    description: It should be user id                    
-                    type: number
-                    example: 2
                   content:
                     type: string
                     example: This is chat content
-                  time:
+                  timesttamp:
                     type: string
                     example: 2023-01-01 10:00
         required: true
